@@ -1,10 +1,33 @@
 # Lo-Fi_Software
 
+<!--
 <img src="https://github.com/sbcshop/Scangenie_Software/blob/main/images/scangenie_banner.jpg">
+-->
 
 Lo-Fi combines ESP32S3 with LoRa to establish long-range wireless communication in challenging situations in addition to WiFi and BLE capabilities. With LoRa's great range and simple connectivity, you can talk with devices up to 5 km distant with ease. Device is available in three supported frequencies - 433MHz, 868MHz, and 915MHz bands for LoRa applications.
 
 This GitHub page offers a step-by-step tutorial for using Lo-Fi. 
+
+### Features : 
+- Device powered by powerful ESP32 S3 WROOM-1 which is having Xtensa® dual-core 32-bit LX7 microprocessor, up to 240 MHz 
+- Inbuilt Wi-Fi & Bluetooth LE for wireless connectivity
+- Type C interface for Programming/Power 
+- 1.14" TFT display with resolution 135 x 240 pixels for visual interactions
+- GPIO breakouts for interfacing additional peripherals 
+- Breadboard compatible for easy DIY breadboarding projects
+- 2 separate user programmable buttons along with Reset and Boot buttons
+- 3.7V Lithium Battery connector for portable use case with onboard charging option
+- Use new generation LoRa spread spectrum to ensure stable communication
+- LoRa supports data rate up to 62.5kbps  and a longer data transmission range of up to 5 km
+
+
+### Pinouts
+
+<img src="">
+
+
+
+  
 
 ### Resources:
   - 
