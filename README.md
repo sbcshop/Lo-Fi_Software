@@ -26,6 +26,31 @@ This GitHub page offers a step-by-step tutorial for using Lo-Fi.
 <img src="">
 -->
 
+### Interfacing Details
+- Display interfacing with ESP32
+    | ESP32 | Display | Function |
+    |---|---|---|
+    | IO12 | LCD_CLK | Clock pin of SPI interface for Display|
+    | IO11 | LCD_DIN | MOSI (Master OUT Slave IN) pin of SPI interface|
+    | IO10 | LCD_CS | Chip Select pin of SPI interface|
+    | IO13 | LCD_DC| Data/Command (MISO) pin of SPI interface|
+    | IO14 | LCD_RST | Display Reset pin |
+    | IO5  | BL | Backlight of display|
+
+- ESP32 and LoRa Module interfacing
+    | ESP32| LoRa Module | Function |
+    |---|---|---|
+    |IO18 | B_RX | UART Communication Pin |
+    |IO17 | B_TX | UART Communication Pin |
+  
+- Buttons and Trigger pin 
+    | ESP32 | Hardware | Function |
+    |---|---|---|
+    |IO0 | BOOT |Boot button |
+    |IO7 | B_SCAN | Scan Trigger Pin |
+  
+- GPIOs Breakout
+- 
 ### 1. Configure and Setup Development Environment
    - Download Arduino IDE from [official site](https://www.arduino.cc/en/software) and install into your system. We have use Arduino IDE 1.8.19
    - Once installation done will add ESP32 S3 board support into IDE, for this first you need to add below link into preference:
