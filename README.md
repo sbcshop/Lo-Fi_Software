@@ -40,14 +40,20 @@ This GitHub page offers a step-by-step tutorial for using Lo-Fi.
 - ESP32 and LoRa Module interfacing
     | ESP32| LoRa Module | Function |
     |---|---|---|
-    |IO18 | B_RX | UART Communication Pin |
-    |IO17 | B_TX | UART Communication Pin |
+    |IO18/U1RXD | LO_TX | UART Communication Pin |
+    |IO17/U1TXD | LO_RX | UART Communication Pin |
+    |IO47 | M0   | Mode selection pin |
+    |IO48 | M1   | Mode selection pin |
+
+  **Note:** There is option to use LoRa Tx and Rx pin standalone and with ESP32. To use standalone remove jumpers from **L_RX-E_TX** and **L_TX-E_RX**
+
   
-- Buttons and Trigger pin 
-    | ESP32 | Hardware | Function |
+- ESP32 and Buttons interfacing
+    | ESP32 | Button | Function |
     |---|---|---|
-    |IO0 | BOOT |Boot button |
-    |IO7 | B_SCAN | Scan Trigger Pin |
+    |IO7 | BT1 |Programmable button |
+    |IO6 | BT2 | Programmable button |
+    |IO0 | BOOT | Boot button |
   
 - GPIOs Breakout
 - 
@@ -98,7 +104,7 @@ Checkout below demo examples code for reference getting started,
   * [Step File](https://github.com/sbcshop/Lo-Fi_Hardware/blob/main/Mechanical%20Data/Step%20Lo-Fi.step)
   * [Getting Started with ESP32 in Arduino](https://docs.espressif.com/projects/arduino-esp32/en/latest/)
   * [ESP32 S3 Hardware Reference](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/hw-reference/index.html)
-  * [ESP32 S3 Datasheet](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Capacitive_Software/blob/main/documents/esp32-s3_datasheet_en.pdf)
+  * [ESP32 S3 WROOM 1 Datasheet](https://github.com/sbcshop/Lo-Fi_Software/blob/main/documents/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf)
   * [Arduino IDE 1 overview](https://docs.arduino.cc/software/ide-v1/tutorials/Environment)
 
 
