@@ -45,9 +45,8 @@ This GitHub page offers a step-by-step tutorial for using Lo-Fi.
     |IO47 | M0   | Mode selection pin |
     |IO48 | M1   | Mode selection pin |
 
-  **Note:** There is option to use LoRa Tx and Rx pin standalone and with ESP32. To use standalone remove jumpers from **L_RX-E_TX** and **L_TX-E_RX**
+  **Note:** There is option to use LoRa Tx and Rx pin either standalone or with ESP32. Default jumper is provided so LoRa is connected with ESP32. If you want to use LoRa standalone with any USB to TTL converter, then remove jumpers from **L_RX-E_TX** and **L_TX-E_RX** header pins.
 
-  
 - ESP32 and Buttons interfacing
     | ESP32 | Button | Function |
     |---|---|---|
