@@ -1,8 +1,5 @@
 # Lo-Fi_Software
-
-<!--
-<img src="https://github.com/sbcshop/Scangenie_Software/blob/main/images/scangenie_banner.jpg">
--->
+<img src="https://cdn.shopify.com/s/files/1/1217/2104/files/lofibanners1copy.jpg?v=1700211816">
 
 Lo-Fi combines ESP32S3 with LoRa to establish long-range wireless communication in challenging situations in addition to WiFi and BLE capabilities. With LoRa's great range and simple connectivity, you can talk with devices up to 5 km distant with ease. Device is available in three supported frequencies - 433MHz, 868MHz, and 915MHz bands for LoRa applications.
 
