@@ -19,9 +19,19 @@ This GitHub page offers a step-by-step tutorial for using Lo-Fi.
 
 
 ### Pinouts
-<!--
-<img src="">
--->
+<img src="https://github.com/sbcshop/Lo-Fi_Software/blob/main/images/LoFi%20pinout.jpg">
+
+ - (1) LoRa Module
+ - (2) SMA Antenna Connector
+ - (3) Boot Button
+ - (4) ESP32-S3-WROOM-1
+ - (5) 1.14” Display
+ - (6) Reset Button
+ - (7) Type C interface
+ - (8) Battery Connector
+ - (9) & (14) Programmable Buttons
+ - (10) & (13) LoRa ESP32 UART pins
+ - (11) & (12) Multifunctional GPIOs Breakout
 
 ### Interfacing Details
 - Display interfacing with ESP32
@@ -80,7 +90,7 @@ This GitHub page offers a step-by-step tutorial for using Lo-Fi.
      <img src= "https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/library_files_path.png" />
      
 ### 3. Testing First Code
-   - At this step you are all set to test codes, for easy getting started we have provided various demo [example codes]() in github which you can download and try. 
+   - At this step you are all set to test codes, for easy getting started we have provided various demo [example codes](https://github.com/sbcshop/Lo-Fi_Software/tree/main/examples) in github which you can download and try. 
    - Open one example code in Arduino and make sure you have selected correct board with suitable com port, click on upload button to transfer code on ESP32 of Lo-Fi.
      <img src="https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/upload_process.gif">
    - Checkout other examples below and build your own custom program codes using those references.
