@@ -61,8 +61,6 @@ This GitHub page offers a step-by-step tutorial for using Lo-Fi.
     |IO6 | BT2 | Programmable button |
     |IO0 | BOOT | Boot button |
   
-- GPIOs Breakout
-- 
 ### 1. Configure and Setup Development Environment
    - Download Arduino IDE from [official site](https://www.arduino.cc/en/software) and install into your system. We have use Arduino IDE 1.8.19
    - Once installation done will add ESP32 S3 board support into IDE, for this first you need to add below link into preference:
@@ -84,7 +82,7 @@ This GitHub page offers a step-by-step tutorial for using Lo-Fi.
      
      
 ### 2. Installing Libraries
-   - Download [library zip file]() provided here in github.
+   - Download [library zip file](https://github.com/sbcshop/Lo-Fi_Software/blob/main/libraries.zip) provided here in github.
    - Extract and copy files inside Document > Arduino > Libraries folder. Make sure to restart Arduino IDE whenever you update or add any libraries.
 
      <img src= "https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/library_files_path.png" />
@@ -97,11 +95,23 @@ This GitHub page offers a step-by-step tutorial for using Lo-Fi.
 
 ### Example Codes
 Checkout below demo examples code for reference getting started,
-   - [Example 1]() : Display Demo code
-   - [Example 2]() : Send and Receive Data using onboard LoRa module
-   - [Example 3]() : 
+   - [Example 1](https://github.com/sbcshop/Lo-Fi_Software/tree/main/examples/Demo_Display) : Display Demo code
+   - [Example 2](https://github.com/sbcshop/Lo-Fi_Software/tree/main/examples/Demo_LoRa_Transmitter) : Send Data from ESP32 over LoRa 
+   - [Example 3](https://github.com/sbcshop/Lo-Fi_Software/tree/main/examples/Demo_LoRa_Receiver) : Receive Data from other LoRa Device
 
    Now you are ready to try out your own codes, **_Happy Coding!_**
+
+### LoRa Module standalone without ESP32
+- There are four operating modes, which are set by M1 and M0
+  
+   | Mode(0-3)       | M1 | M0 |
+   |---|---|---|
+   | 0 Normal        | 0  | 0  |
+   | 1 WOR Mode      | 0  | 1  |
+   | 2 Configuration | 1  | 0  |
+   | 3 Deep sleep    | 1  | 1  |
+   ----------------------------- 
+- Refer [Manual](https://github.com/sbcshop/Lo-Fi_Software/blob/main/documents/LoRa%20Module%20Working%20Modes.pdf) for more details of Operating Modes
 
 
 ## Resources
