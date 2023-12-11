@@ -112,7 +112,28 @@ Checkout below demo examples code for reference getting started,
    | 3 Deep sleep    | 1  | 1  |
    ----------------------------- 
 - Refer [Manual](https://github.com/sbcshop/Lo-Fi_Software/blob/main/documents/LoRa%20Module%20Working%20Modes.pdf) for more details of Operating Modes
+- Follow below connection to interface LoRa Module with USB to TTL converter, make sure to remove jumpers
 
+  <img src="https://github.com/sbcshop/Lo-Fi_Software/blob/main/images/ESP32_LoRa_UART_jumper.jpg" width="146" height="145">
+  
+  |USB to TTL | Lo-Fi| Function |
+  |---|---|---|
+  |5V | 5V | Positive Supply |
+  |GND | GND | Ground |
+  |TXD | L_RX | UART Connection | 
+  |RXD | L_TX | UART Connection |
+  
+  **Note:** Do cross connection of UART pins if module won't respond, some TTL converter follow opposite lines at TXD and RXD positions.
+
+- Once the LoRa Module and USB-TTL converter are connected, attach the converter to the USB port of the computer or laptop and check your COM Port in device manager.
+    
+    <img src="https://github.com/sbcshop/NFC_Module/blob/main/images/device_manager_comport_view.png" width="584" height="425">
+
+    If you don't have CH340 driver installed in PC/laptop, then checkout [CH340 Driver Installation Manual Guide](https://github.com/sbcshop/NFC_Module/blob/main/documents/CH340%20Driver%20installation%20steps.pdf).
+
+- So, now you are ready to use LoRa module standalone with software. To decide various modes of LoRa module use example "**_[Mode Setup]_**(https://github.com/sbcshop/Lo-Fi_Software/tree/main/examples/ModeSetup)". Here you can set M0 and M1 values to change modes.
+- Follow below guide line for configuration LoRa module using GUI application
+### LoRa Module standalone without ESP32 
 
 ## Resources
   * [Schematic](https://github.com/sbcshop/Lo-Fi_Hardware/blob/main/Design%20Data/schematic%20Lo-Fi.pdf)
