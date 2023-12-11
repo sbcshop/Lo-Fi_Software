@@ -131,9 +131,45 @@ Checkout below demo examples code for reference getting started,
 
     If you don't have CH340 driver installed in PC/laptop, then checkout [CH340 Driver Installation Manual Guide](https://github.com/sbcshop/NFC_Module/blob/main/documents/CH340%20Driver%20installation%20steps.pdf).
 
-- So, now you are ready to use LoRa module standalone with software. To decide various modes of LoRa module use example "**_[Mode Setup]_**(https://github.com/sbcshop/Lo-Fi_Software/tree/main/examples/ModeSetup)". Here you can set M0 and M1 values to change modes.
-- Follow below guide line for configuration LoRa module using GUI application
-### LoRa Module standalone without ESP32 
+- So, now you are ready to use LoRa module standalone with software. To decide various modes of LoRa module use example **_[Mode Setup](https://github.com/sbcshop/Lo-Fi_Software/tree/main/examples/ModeSetup)_**. Here you can set M0 and M1 values to change modes.
+- Follow below guide line for LoRa module configuration using GUI application
+  
+### Lora GUI For Configuration (run with the help of GUI) 
+#### Step 1: Connect LoRa to TTL converter as shown in above step. Download and open [lora GUI application](https://github.com/sbcshop/Lo-Fi_Software/tree/main/GUI%20For%20Window) for windows available in github here
+ <img src= "https://github.com/sbcshop/Lora-HAT-for-Raspberry-Pi/blob/main/images/img_1.png" />
+ 
+#### Step 3: Verify COM port from Device Manager 
+  <img src= "https://github.com/sbcshop/Lora-HAT-for-Raspberry-Pi/blob/main/images/img_7.png" />
+ 
+#### Step 4: Write the proper COM Port in the GUI, then press connect button
+  <img src= "https://github.com/sbcshop/Lora-HAT-for-Raspberry-Pi/blob/main/images/img_8.png" />
+  <img src= "https://github.com/sbcshop/Lora-HAT-for-Raspberry-Pi/blob/main/images/img_9.png" />
+
+#### Step 5: Press read button to see the device configuration which lora already have
+  <img src= "https://github.com/sbcshop/Lora-HAT-for-Raspberry-Pi/blob/main/images/img__10.png" />
+ 
+#### Step 6: Write the values which you need to configure, for eg: i configure channel and baudrate, after that press write button
+  <img src= "https://github.com/sbcshop/Lora-HAT-for-Raspberry-Pi/blob/main/images/img_13.png" />
+
+ How to Set corresponding frequency:
+ 
+    -> For changing frequency using Software for 868MHz & 915MHz LoRa module:
+
+    Frequency = 850.125MHz + CH*1MHz
+    
+    0-83 total of 84 Channel available
+    
+    So, when 5 selected Frequency = 850.125MHz + 5*1MHz Frequency = 855.125MHz
+    
+    -> For Changing Frequency using Software for 433MHz LoRa Module: Frequency = 410.125MHz + CH*1MHz
+    
+    0-83 total of 84 Channel available
+    
+    So, when 5 selected Frequency = 410.125MHz + 5*1MHz Frequency = 415.125MHz
+    
+#### Step 7: Restart the GUI, set baudrate and port, then connect and press read button 
+  <img src= "https://github.com/sbcshop/Lora-HAT-for-Raspberry-Pi/blob/main/images/img_14.png" />
+  <img src= "https://github.com/sbcshop/Lora-HAT-for-Raspberry-Pi/blob/main/images/img_15.png" />
 
 ## Resources
   * [Schematic](https://github.com/sbcshop/Lo-Fi_Hardware/blob/main/Design%20Data/schematic%20Lo-Fi.pdf)
