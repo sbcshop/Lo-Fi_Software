@@ -102,16 +102,6 @@ Checkout below demo examples code for reference getting started,
    Now you are ready to try out your own codes, **_Happy Coding!_**
 
 ### LoRa Module standalone without ESP32
-- There are four operating modes, which are set by M1 and M0
-  
-   | Mode(0-3)       | M1 | M0 |
-   |---|---|---|
-   | 0 Normal        | 0  | 0  |
-   | 1 WOR Mode      | 0  | 1  |
-   | 2 Configuration | 1  | 0  |
-   | 3 Deep sleep    | 1  | 1  |
-   ----------------------------- 
-- Refer [Manual](https://github.com/sbcshop/Lo-Fi_Software/blob/main/documents/LoRa%20Module%20Working%20Modes.pdf) for more details of Operating Modes
 - Follow below connection to interface LoRa Module with USB to TTL converter, make sure to remove jumpers
 
   <img src="https://github.com/sbcshop/Lo-Fi_Software/blob/main/images/ESP32_LoRa_UART_jumper.jpg" width="146" height="145">
@@ -123,6 +113,8 @@ Checkout below demo examples code for reference getting started,
   |TXD | L_RX | UART Connection | 
   |RXD | L_TX | UART Connection |
   
+  For Demo one we are using CH340 USB to TTL converter available [here](https://shop.sb-components.co.uk/products/usb-ttl?variant=40312245059667).
+  
   **Note:** Do cross connection of UART pins if module won't respond, some TTL converter follow opposite lines at TXD and RXD positions.
 
 - Once the LoRa Module and USB-TTL converter are connected, attach the converter to the USB port of the computer or laptop and check your COM Port in device manager.
@@ -132,6 +124,16 @@ Checkout below demo examples code for reference getting started,
     If you don't have CH340 driver installed in PC/laptop, then checkout [CH340 Driver Installation Manual Guide](https://github.com/sbcshop/NFC_Module/blob/main/documents/CH340%20Driver%20installation%20steps.pdf).
 
 - So, now you are ready to use LoRa module standalone with software. To decide various modes of LoRa module use example **_[Mode Setup](https://github.com/sbcshop/Lo-Fi_Software/tree/main/examples/ModeSetup)_**. Here you can set M0 and M1 values to change modes.
+- There are four operating modes, which are set by M1 and M0
+  
+   | Mode(0-3)       | M1 | M0 |
+   |---|---|---|
+   | 0 Normal        | 0  | 0  |
+   | 1 WOR Mode      | 0  | 1  |
+   | 2 Configuration | 1  | 0  |
+   | 3 Deep sleep    | 1  | 1  |
+   ----------------------------- 
+- Refer [Manual](https://github.com/sbcshop/Lo-Fi_Software/blob/main/documents/LoRa%20Module%20Working%20Modes.pdf) for more details of Operating Modes
 - Follow below guide line for LoRa module configuration using GUI application
   
 ### Lora GUI For Configuration (run with the help of GUI) 
